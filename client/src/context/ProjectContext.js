@@ -27,6 +27,7 @@ export const projectsReducer = (state, action) => {
 
 // state being share to the children
 export const ProjectsContextProvider = ({ children }) => {
+    const url = "https://eng-nordz-server.onrender.com"
     const [state, dispatch] = useReducer(projectsReducer, {
         projects: null
     })
